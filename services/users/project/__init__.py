@@ -1,7 +1,7 @@
 # services/users/project/__init__.py
 
 
-from flask import Flask, jsonify
+from flask import Flask
 from flask_restful import Resource, Api
 
 
@@ -9,7 +9,7 @@ from flask_restful import Resource, Api
 app = Flask(__name__)
 api = Api(app)
 
-# set config
+# set config via Flask
 app.config.from_object('project.config.DevelopmentConfig')
 
 
